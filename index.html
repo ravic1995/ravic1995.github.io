@@ -3,7 +3,16 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="index.js"></script>
+    <script>
+    var app = angular.module('StarterApp', ['ngMaterial']);
+
+app.controller('AppCtrl', ['$scope', '$mdSidenav', function($scope, $mdSidenav){
+  $scope.toggleSidenav = function(menuId) {
+    $mdSidenav(menuId).toggle();
+  };
+ 
+}]);
+</script>
     <meta name="viewport" content="initial-scale=1" />
   </head>
   <body layout="column" ng-controller="AppCtrl">
