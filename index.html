@@ -6,30 +6,84 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
 
+     <link rel="stylesheet" href="/content/vendor.min-01a3ae75.css">
+    <!-- endinject -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/content/all.min-9cc91b65.css">
+
     <meta name="viewport" content="initial-scale=1" />
   </head>
 
   <body ng-controller="AppCtrl">
-    <!--sideNav-->
+    <!--sideNav
     <ul id="slide-out" class="side-nav fixed">
-    <div class="row">
+    <li>
         <div class="card small">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
-              <span class="card-title right">Ravi  <strong>Chandak<strong></span>
+              <div class="card-title right">Ravi  <strong>Chandak<strong></div>
               <p class="right">
                 Computer Science </br>
-                National Universiry of Singapore</br>
+                National University of Singapore</br>
               </p>
-            </div>
           </div>
         </div>
       </div>
-
-    <li><a href="#">First Sidebar Link</a></li>
-    <li><a href="#!">Second Sidebar Link</a></li>
+    </li>
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#hackathons">Hackathons</a></li>
+    <li><a href="#skills">Skills</a></li>
   </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>-->
+  <div class="io-site">
+        <div class="io-nav">
+            <div class="io-nav-inner">
+                <header class="io-nav-header red accent-2">
+                    <div class="io-nav-text">
+                        <div class="io-nav-header-name white-text darken-1">
+                            Ravi <strong>Chandak</strong>
+                        </div>
+                        <div class="io-nav-header-email">
+                        Software Engineer
+                        </div>
+                        <div class="io-nav-header-email">
+                        Web Developer and JavaScript Engineer
+                        </div>
+                    </div>
+                </header>
+                <div class="io-navigation" du-scroll-container="container">
+                    <a href="#section-1" du-smooth-scroll du-scrollspy class="io-navigation-item waves-effect">
+                        <i class="mdi-social-person red-text accent-2"></i>
+                        <div class="io-navigation-item-text grey-text darken-1">Profile</div>
+                    </a>
+                    <a href="#section-2" du-smooth-scroll du-scrollspy ng-click="app.toSection2()" class="io-navigation-item waves-effect">
+                        <i class="mdi-action-history purple-text accent-2"></i>
+                        <div class="io-navigation-item-text grey-text darken-1">Experience</div>
+                    </a>
+                    <a href="#section-3" du-smooth-scroll du-scrollspy ng-click="app.toSection2()" class="io-navigation-item waves-effect">
+                        <i class="mdi-av-web green-text accent-2"></i>
+                        <div class="io-navigation-item-text grey-text darken-1">Projects</div>
+                    </a>
+                    <a href="#section-4" du-smooth-scroll du-scrollspy ng-click="app.toSection2()" class="io-navigation-item waves-effect">
+                        <i class="mdi-av-equalizer blue-text accent-2"></i>
+                        <div class="io-navigation-item-text grey-text darken-1">Skills</div>
+                    </a>
+                    <a href="#section-5" du-smooth-scroll du-scrollspy ng-click="app.toSection2()" class="io-navigation-item waves-effect">
+                        <i class="mdi-social-school amber-text darken-3"></i>
+                        <div class="io-navigation-item-text grey-text darken-1">Education</div>
+                    </a>
+                    <!-- <div href="#section-5" du-smooth-scroll du-scrollspy class="io-navigation-item waves-effect">
+                        <i class="mdi-communication-call amber-text darken-3"></i>
+                        <div class="io-navigation-item-text grey-text darken-1">Contact</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
         
         
     <!--<md-toolbar layout="row">
@@ -51,6 +105,13 @@
         </div>
     </div>-->
     <!-- Angular Material Dependencies -->
+     <!-- inject-vendor:js -->
+    <script src="/vendor.min-73bda590.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:js -->
+    <script src="/all.min-cc0d69af.js"></script>
+    <!-- endinject -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
           
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
