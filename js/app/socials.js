@@ -14,6 +14,7 @@ var SocialsContainer = React.createClass({
         <Social link="https://github.com/ravic1995" icon="img/gith.png" />
         <Social link="https://sg.linkedin.com/in/ravi-chandak-28825524" icon="img/link.png" />
         <Social link="https://www.facebook.com/ravic1995" icon="img/face.png" />
+        <Social link="tel:+6593705603" icon="img/phone.png" />
       </div>
     );
   }
