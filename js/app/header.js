@@ -77,7 +77,7 @@ var Header = React.createClass({
         <div className="container">
           <div>
             <div className="menu-container">
-            <ul className="menu"><li><a href="#/" class="active" >Ravi Chandak</a></li> </ul>
+            <ul className="menu"><li><a href="#/" class="active" >Raviprakash Chandak</a></li> </ul>
             </div>
             <a href="#" className="collapse visible-xs"><span></span></a>
             <Menu/>

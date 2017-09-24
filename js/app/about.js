@@ -1,5 +1,6 @@
 var React = require('react');
 var LoadJSON = require('./mixins').LoadJSON;
+var File = require("../../data/skills.json");
 
 var InfoContainer = React.createClass({
   mixins: [LoadJSON],
@@ -23,8 +24,9 @@ var Skills = React.createClass({
   render: function() {
     var data = this.props.skills;
     var skills = [];
+    console.log(data);
     for(var key in data) {
-      skills.push(<li><img src={data[key]} alt={key} /></li>);
+      skills.push(<li><img height="100" src={data[key]} alt={key} /></li>);
     }
     return(
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 skills">
@@ -38,11 +40,13 @@ var Skills = React.createClass({
 
 var SkillsContainer = React.createClass({
   mixins: [LoadJSON],
+  // var a = fetch("data/skills.json");
   render: function() {
+  console.log( "A", File);
     return(
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 skills-container">
         <h2>&#60; Skills &#47;&#62;</h2>
-        <Skills skills={this.state.data} />
+        <Skills skills={File} />
       </div>
     );
   }
