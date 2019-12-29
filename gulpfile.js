@@ -18,20 +18,20 @@ var paths = {
 };
 
 gulp.task('clean', function(done) {
-  del(['./js/build/*.js'], done);
+  return del(['./js/build/*.js'], done);
 });
 
-gulp.task('js', ['clean'], function() {
-  browserify(paths.app_js)
+gulp.task('js', gulp.series('clean', function() { 
+  return browserify(paths.app_js)
     .transform(reactify)
     .bundle()
     .pipe(source('bundle.js'))
     .pipe(streamify(uglify()))
     .pipe(gulp.dest('./js/build'));
-});
+}));
 
 gulp.task('css', function () {
-  gulp.src(paths.css)
+  return gulp.src(paths.css)
     .pipe(less())
     .pipe(cssmin())
     .pipe(rename({
@@ -54,9 +54,9 @@ gulp.task('connect', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(paths.index, ['html']);
-  gulp.watch(paths.css, ['css']);
-  gulp.watch(paths.js, ['js']);
+  gulp.watch(paths.index, gulp.series('html'));
+  gulp.watch(paths.css, gulp.series('css'));
+  gulp.watch(paths.js, gulp.series('js'));
 });
 
-gulp.task('default', ['css', 'js', 'connect', 'watch']);
+gulp.task('default', gulp.parallel('css', 'js','connect', 'watch'));
