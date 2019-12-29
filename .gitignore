@@ -3,4 +3,5 @@
 *.DS_Store
 .pants.workdir.file_lock
 npm-debug.log
+package-lock.json
 node_modules/
