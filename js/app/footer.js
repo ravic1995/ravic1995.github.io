@@ -15,7 +15,7 @@ var Footer = React.createClass({
             </ul>
             </div>
             <div className="footer-socials">
-              <Social link="mailto:r.c@u.nus.edu" icon="img/email-white.png" />
+              <Social link="mailto:raviprakashchandak@gmail.com" icon="img/email-white.png" />
               <Social link="https://github.com/ravic1995" icon="img/gith-white.png" />
               <Social link="https://sg.linkedin.com/in/ravi-chandak-28825524" icon="img/link-white.png" />
               <Social link="https://www.facebook.com/ravic1995" icon="img/face-white.png" />

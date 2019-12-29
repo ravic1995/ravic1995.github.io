@@ -59,4 +59,4 @@ gulp.task('watch', function() {
   gulp.watch(paths.js, gulp.series('js'));
 });
 
-gulp.task('default', gulp.parallel('css', 'js','connect', 'watch'));
+gulp.task('default', gulp.series('css', 'js','connect', 'watch'));
