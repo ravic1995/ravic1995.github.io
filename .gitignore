@@ -1,6 +1,6 @@
 .pids/
 *.swp
-.DS_Store
+*.DS_Store
 .pants.workdir.file_lock
 npm-debug.log
 node_modules/

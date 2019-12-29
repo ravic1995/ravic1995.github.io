@@ -1,11 +1,14 @@
 {
-  "golang": "img/logos/golang.png",
+  "Golang": "img/logos/golang.png",
   "java": "img/logos/java.png",
   "C/C++": "img/logos/c++.png",
+  "Python": "img/logos/python.png",
   "javascript": "img/logos/javascript.png",
   "reactjs": "img/logos/reactjs.png",
   "Scala": "img/logos/scala.png",
+  "Redis": "img/logos/redis.png",
   "Haskell": "img/logos/haskell.png",
+  "AWS": "img/logos/aws.png",
   "GoogleCloud": "img/logos/gcloud.png",
   "Kubernetes": "img/logos/kubernetes.png",
 }
