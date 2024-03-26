@@ -8,9 +8,9 @@ var InfoContainer = React.createClass({
     return(
       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopad">
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 info-container">
-          <div className="col-lg-2 col-md-3 col-sm-4 col-xs-12 nopad">
-            <img className="img-responsive" src={this.state.data.thumbnail} />
-          </div>
+          {/*<div className="col-lg-2 col-md-3 col-sm-4 col-xs-12 nopad">*/}
+          {/*  <img className="img-responsive" src={this.state.data.thumbnail} />*/}
+          {/*</div>*/}
           <div className="col-lg-10 col-md-9 col-sm-8 col-xs-12">
             <p className="myself">{this.state.data.text}</p>
           </div>
